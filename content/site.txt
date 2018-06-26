@@ -1,0 +1,13 @@
+Title: Brand Studio
+
+----
+
+Author: Brand Studio
+
+----
+
+Description: Brand Studio
+
+----
+
+Copyright: © 2018–(date: Year) (link: http://brand-studio.de text: Brand Studio) | (link: http://parkwayberlin.com text: Made by Parkway Berlin)

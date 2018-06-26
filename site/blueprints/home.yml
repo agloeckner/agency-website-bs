@@ -1,0 +1,187 @@
+title: Page
+
+fields:
+
+#   title:
+#     label: Title
+#     type:  text
+
+  hidebar:
+    type: hidebar
+
+  stage:
+    label: Stage
+    type:  structure
+    style: table
+    entry:
+#       - image
+    fields:
+      title:
+        label: Name
+        type: text
+      type:
+        label: type
+        type: radio
+        options:
+          image: image
+          logo: logo
+      image:
+        label: Image
+        type: images
+        limit: 1
+
+  brands:
+    label: Brands
+    type:  structure
+    style: table
+    entry:
+#       - title
+    fields:
+      title:
+        label: Name
+        type: text
+      subtitle:
+        label: Subtitle
+        type: text
+      text:
+        label: Text
+        type: textarea
+      item_image:
+        label: Image
+        type: images
+      url:
+        label: URL
+        type: text       
+
+  team:
+    label: Team
+    type:  structure
+    style: table
+    fields:
+      title:
+        label: Name
+        type: text
+      phone:
+        label: Tel.
+        type: text
+      email:
+        label: Email
+        type: text
+      address:
+        label: Adresse
+        type: textarea
+      hours:
+        label: Öffnungszeiten
+        type: textarea
+      photos:
+        label: Image
+        type: images
+      url:
+        label: URL
+        type: text
+      location:
+        label: Location
+        type: map 
+
+  showroom:
+    label: Showroom
+    type:  structure
+    style: table
+    entry:
+#       - title
+    fields:
+      title:
+        label: Name
+        type: text
+      subtitle:
+        label: Subtitle
+        type: text
+      text:
+        label: Text
+        type: textarea
+      item_image:
+        label: Image
+        type: images
+      url:
+        label: URL
+        type: text       
+
+  contact:
+    label: Kontakt
+    type:  structure
+    style: table
+    fields:
+      title:
+        label: Name
+        type: text
+      phone:
+        label: Tel.
+        type: text
+      email:
+        label: Email
+        type: text
+      address:
+        label: Adresse
+        type: textarea
+      hours:
+        label: Öffnungszeiten
+        type: textarea
+      photos:
+        label: Image
+        type: images
+      url:
+        label: URL
+        type: text
+      location:
+        label: Location
+        type: map
+
+  navigation:
+    label: Navigation
+    type:  structure
+    style: table
+    modalsize: large
+    limit: 20
+    entry:
+      - title
+      - url
+      - type
+      - position
+    fields:
+      title:
+        label: Name
+        type: text
+        required: yes
+      position:
+        label: Top and Bottom / Bottom-only
+        type: radio
+        options:
+          all: Top and Bottom
+          bottom: Bottom-only 
+      type:
+        label: Type
+        type: fieldtoggle
+        options:
+          link: URL
+          button: Button
+        show:
+          link: url
+          button: button
+        hide:
+          link: button
+          button: url
+      url:
+        label: URL
+        type: text
+      button:
+        type: textarea
+      url2:
+        label: URL
+        type: select
+        options: pages
+      nav_img:
+        label: Image
+        type: select
+        options: images
+
+

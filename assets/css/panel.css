@@ -1,0 +1,15 @@
+@media screen and (min-width:30em) {
+    .modal-content {
+        width: 22em;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .modal-content-large {
+        width: 90%;
+        max-width: none}
+
+    .modal-content-medium {
+        width: 90%;
+        max-width: none;
+    }

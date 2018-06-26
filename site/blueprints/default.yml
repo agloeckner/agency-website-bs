@@ -1,0 +1,18 @@
+title: Page
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  navigation:
+    label: Text
+    type:  structure
+    fields:
+      title:
+        label: Name
+        type: text
+      image:
+        label: Image
+        type: image
+      
