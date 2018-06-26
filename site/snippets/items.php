@@ -111,14 +111,14 @@ $blueprint_path = page()->$blueprint()->toStructure();
 	$('div.<?php echo $section[1] ?> div.btn-<?php echo $i ?>').click(function() {
 	$('div.wrapper').addClass('wrapper-active');
 	$('div.wrapper div.txt-<?php echo $i ?>').addClass('wrapper-item-active');
-	$('div.main').css({'position':'fixed'});
+	$('body').css({'overflow':'hidden'});
 	});
 
 	// wrapper bg close
 	$('div.wrapper').click(function() {
 	$('div.wrapper').removeClass('wrapper-active');
 	$('div.wrapper div.txt-<?php echo $i ?>').removeClass('wrapper-item-active');
-	$('div.main').css({'position':'relative'});
+	$('body').css({'overflow':'unset'});
 	});
 
 	// move txt/img to wrapper div
